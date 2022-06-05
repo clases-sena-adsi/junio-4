@@ -1,7 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    <h5>Listado de productos</h5>
+    <h5>Listado de productos <a href="{{ route('products.create') }}" class="btn">Crear nuevo producto</a></h5>
     <hr>
+    @include('layouts.components.alerts')
+
     <table>
         <thead>
         <tr>
